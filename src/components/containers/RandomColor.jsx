@@ -3,13 +3,14 @@ import ColorDisplay from '../ColorDisplay';
 
 export default class RandomColor extends Component {
     state = {
-      randomColor: 'red'
+      randomColor: 'cyan'
     }
 
     render() {
       return (
         <>
-          <ColorDisplay color={this.state.randomColor}/>
+          <ColorDisplay backgroundColor={this.state.randomColor}/>
+          <h1>{this.state.randomColor}</h1>
         </>
       );
     }
