@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
+import ColorDisplay from '../ColorDisplay';
 
 export default class RandomColor extends Component {
     state = {
-      randomColor: 'cyan'
+      randomColor: 'red'
     }
 
     render() {
       return (
-        <div>
-                
-        </div>
+        <>
+          <ColorDisplay color={this.state.randomColor}/>
+        </>
       );
     }
 }
