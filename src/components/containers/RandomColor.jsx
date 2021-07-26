@@ -10,7 +10,6 @@ export default class RandomColor extends Component {
     handleColorChange = () => {
       const colors = ['green', 'yellow', 'cyan', 'pink'];
       const color = colorGenerator(colors);
-      console.log(color);
       this.setState({ randomColor: colors[color] });
     }
     componentDidMount() {
