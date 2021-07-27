@@ -8,4 +8,7 @@ describe('App component', () => {
     const { asFragment } = render(<App />);
     expect(asFragment()).toMatchSnapshot();
   });
+  it('fake test'), () => {
+    test.todo;
+  };
 });
