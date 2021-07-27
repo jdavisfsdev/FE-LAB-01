@@ -9,9 +9,7 @@ export default class RandomColor extends Component {
     }
 
     handleColorChange = () => {
-      const colors = ['green', 'yellow', 'cyan', 'pink', 'black', 'blue', 'red'];
-      const color = colorGenerator(colors);
-      this.setState({ randomColor: colors[color] });
+      this.setState({ randomColor: colorGenerator() });
     }
     componentDidMount() {
       this.interval = setInterval(() => this.handleColorChange(), 1000);
@@ -19,9 +17,6 @@ export default class RandomColor extends Component {
     componentWillUnmount() {
       clearInterval(this.interval);
     }
-    // componentDidUpdate() {
-    //   setInterval(this.handleColorChange(), 1000);
-    // }
 
     render() {
       return (

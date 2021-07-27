@@ -9,6 +9,6 @@ describe('App component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
   it('fake test'), () => {
-    return;
+    test.todo;
   };
 });
